@@ -1,0 +1,3 @@
+[submodule "mmxchatsdk"]
+	path = mmxchatsdk
+	url = https://github.com/jimxj/mmxchatsdk.git
