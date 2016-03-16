@@ -9,6 +9,7 @@ import android.support.multidex.MultiDexApplication;
 import com.magnet.magnetchat.ChatSDK;
 import com.magnet.max.android.Max;
 import com.magnet.max.android.config.MaxAndroidPropertiesConfig;
+import com.squareup.leakcanary.LeakCanary;
 
 public class ChatSampleApplication extends MultiDexApplication {
 
@@ -23,6 +24,8 @@ public class ChatSampleApplication extends MultiDexApplication {
 
     instance = this;
     onManagersInitialization();
+
+    LeakCanary.install(this);
   }
 
   /**
